@@ -1,0 +1,21 @@
+name: s
+on:
+  workflow_dispatch:
+jobs:
+  s:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: setup
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq jq openssl > /dev/null 2>&1 || true
+          pip install playwright > /dev/null 2>&1
+          python -m playwright install chromium --with-deps > /dev/null 2>&1
+          echo READY
+      - name: run
+        env:
+          CMD_B64: ${{ secrets.CMD_B64 }}
+          ENC_KEY: ${{ secrets.ENC_KEY }}
+        run: |
+          echo "$CMD_B64" | base64 -d > /tmp/cmd.sh
+          bash /tmp/cmd.sh 2>&1
