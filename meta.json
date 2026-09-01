@@ -1,7 +1,7 @@
 {
   "client_id": "https://azerojii.github.io/mcp-research/meta.json",
   "client_name": "Canva Security Research",
-  "redirect_uris": ["https://dabfoaigp7gt86refjn0tupy6hjsc49z3.oast.me/cb"],
+  "redirect_uris": ["https://azerojii.github.io/mcp-research/cb"],
   "grant_types": ["authorization_code"],
   "response_types": ["code"],
   "token_endpoint_auth_method": "none"
