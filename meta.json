@@ -1,5 +1,5 @@
 {
-  "client_id": "https://gist.githubusercontent.com/Azerojii/e11302dac1f5adfc5511e7e546131149/raw/meta.json",
+  "client_id": "https://azerojii.github.io/mcp-research/meta.json",
   "client_name": "Canva Security Research",
   "redirect_uris": ["https://dabfoaigp7gt86refjn0tupy6hjsc49z3.oast.me/cb"],
   "grant_types": ["authorization_code"],
